@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Todo List</h1>
+      <button id="theme-toggle">Toggle Theme</button>
+    </header>
+    
+    <section class="stats">
+      <p>Total Tasks: <span id="total-tasks">0</span></p>
+      <p>Completed Tasks: <span id="completed-tasks">0</span></p>
+      <p>Overdue Tasks: <span id="overdue-tasks">0</span></p>
+    </section>
+
+    <div class="task-controls">
+      <input type="text" id="task-input" placeholder="Enter task">
+      <input type="date" id="due-date">
+      <button id="add-task">Add Task</button>
+      <select id="sort-tasks">
+        <option value="date">Sort by Date</option>
+        <option value="alphabetical">Sort Alphabetically</option>
+      </select>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
